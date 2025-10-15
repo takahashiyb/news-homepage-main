@@ -14,7 +14,8 @@
 
     <title>Frontend Mentor | News homepage</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="./css/general.css" />
+
     <style>
       .attribution {
         font-size: 11px;
@@ -26,28 +27,114 @@
     </style>
   </head>
   <body>
-    Home New Popular Trending Categories The Bright Future of Web 3.0? We dive
-    into the next evolution of the web that claims to put the power of the
-    platforms back into the hands of the people. But is it really fulfilling its
-    promise? Read more New Hydrogen VS Electric Cars Will hydrogen-fueled cars
-    ever catch up to EVs? The Downsides of AI Artistry What are the possible
-    adverse effects of on-demand AI image generation? Is VC Funding Drying Up?
-    Private funding by VC firms is down 50% YOY. We take a look at what that
-    means. 01 Reviving Retro PCs What happens when old PCs are given modern
-    upgrades? 02 Top 10 Laptops of 2022 Our best picks for various needs and
-    budgets. 03 The Growth of Gaming How the pandemic has sparked fresh
-    opportunities.
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by
-      <a
-        href="https://www.frontendmentor.io/profile/takahashiyb"
-        target="_blank"
-        >ybtakahashi</a
-      >.
+    <div class="center-div">
+      <main>
+        <header>
+          <h1></h1>
+          <nav>
+            <ul>
+              <li>Home</li>
+              <li>New</li>
+              <li>Popular</li>
+              <li>Trending</li>
+              <li>Categories</li>
+            </ul>
+          </nav>
+        </header>
+        <section class="featured-section">
+          <img
+            src="./assets/images/image-web-3-mobile.jpg"
+            alt="image to featured article"
+          />
+          <div class="text-content">
+            <h2 id="featured-article-title">The Bright Future of Web 3.0?</h2>
+            <p>
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is it
+              really fulfilling its promise?
+            </p>
+            <button
+              aria-labelledby="featured-article-title"
+              aria-label="link to featured article"
+            >
+              Read more
+            </button>
+          </div>
+        </section>
+        <section class="new-section">
+          <header><h2>New</h2></header>
+          <ol>
+            <li>
+              <h3>Hydrogen VS Electric Cars</h3>
+              <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+            </li>
+            <li>
+              <h3>The Downsides of AI Artistry</h3>
+              <p>
+                What are the possible adverse effects of on-demand AI image
+                generation?
+              </p>
+            </li>
+            <li>
+              <h3>Is VC Funding Drying Up?</h3>
+              <p>
+                Private funding by VC firms is down 50% YOY. We take a look at
+                what that means.
+              </p>
+            </li>
+          </ol>
+        </section>
+        <section class="top-section">
+          <ol>
+            <li>
+              <img src="./assets/images/image-retro-pcs.jpg" alt="" />
+              <div>
+                <p class="top-section-rank">01</p>
+                <p class="article-title">Reviving Retro PCs</div>p>
+                <p></p>
+                <p class="article-description">
+                  What happens when old PCs are given modern upgrades?
+                </p>
+              </div>
+            </li>
+            <li>
+              <img src="./assets/images/image-top-laptops.jpg" alt="" />
+              <div>
+                <p class="top-section-rank">02</p>
+                <p class="article-title">Top 10 Laptops of 2022</p>
+                <p></p>
+                <p class="article-description">
+                  Our best picks for various needs and budgets.
+                </p>
+              </div>
+            </li>
+            <li>
+              <img src="./assets/images/image-gaming-growth.jpg" alt="" />
+              <div>
+                <p class="top-section-rank">03</p>
+                <p class="article-title">The Growth of Gaming</p>
+                <p></p>
+                <p class="article-description">
+                  How the pandemic has sparked fresh opportunities.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </section>
+      </main>
     </div>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          href="https://www.frontendmentor.io/profile/takahashiyb"
+          target="_blank"
+          >ybtakahashi</a
+        >.
+      </div>
+    </footer>
   </body>
 </html>
