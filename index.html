@@ -28,30 +28,37 @@
   </head>
   <body>
     <div class="center-div">
+      <header class="page-banner">
+        <img class="site-logo" src="./assets/images/logo.svg" alt="site logo" />
+        <button><img src="./assets/images/icon-menu.svg" alt="" /></button>
+        <nav>
+          <ul>
+            <li>Home</li>
+            <li>New</li>
+            <li>Popular</li>
+            <li>Trending</li>
+            <li>Categories</li>
+          </ul>
+        </nav>
+      </header>
       <main>
-        <header>
-          <h1></h1>
-          <nav>
-            <ul>
-              <li>Home</li>
-              <li>New</li>
-              <li>Popular</li>
-              <li>Trending</li>
-              <li>Categories</li>
-            </ul>
-          </nav>
-        </header>
         <section class="featured-section">
-          <img
-            src="./assets/images/image-web-3-mobile.jpg"
-            alt="image to featured article"
-          />
+          <picture>
+            <source
+              srcset="./assets/images/image-web-3-desktop.jpg"
+              media="(min-width: 767px)"
+            />
+            <img
+              src="./assets/images/image-web-3-mobile.jpg"
+              alt="image to featured article"
+            />
+          </picture>
           <div class="text-content">
             <h2 id="featured-article-title">The Bright Future of Web 3.0?</h2>
             <p>
               We dive into the next evolution of the web that claims to put the
-              power of the platforms back into the hands of the people. But is it
-              really fulfilling its promise?
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
             </p>
             <button
               aria-labelledby="featured-article-title"
@@ -62,7 +69,7 @@
           </div>
         </section>
         <section class="new-section">
-          <header><h2>New</h2></header>
+          <h2>New</h2>
           <ol>
             <li>
               <h3>Hydrogen VS Electric Cars</h3>
@@ -84,14 +91,13 @@
             </li>
           </ol>
         </section>
-        <section class="top-section">
+        <section class="popular-section">
           <ol>
             <li>
               <img src="./assets/images/image-retro-pcs.jpg" alt="" />
               <div>
-                <p class="top-section-rank">01</p>
-                <p class="article-title">Reviving Retro PCs</div>p>
-                <p></p>
+                <p class="popular-section-rank">01</p>
+                <h2 class="article-title">Reviving Retro PCs</h2>
                 <p class="article-description">
                   What happens when old PCs are given modern upgrades?
                 </p>
@@ -100,9 +106,8 @@
             <li>
               <img src="./assets/images/image-top-laptops.jpg" alt="" />
               <div>
-                <p class="top-section-rank">02</p>
-                <p class="article-title">Top 10 Laptops of 2022</p>
-                <p></p>
+                <p class="popular-section-rank">02</p>
+                <h2 class="article-title">Top 10 Laptops of 2022</h2>
                 <p class="article-description">
                   Our best picks for various needs and budgets.
                 </p>
@@ -111,9 +116,8 @@
             <li>
               <img src="./assets/images/image-gaming-growth.jpg" alt="" />
               <div>
-                <p class="top-section-rank">03</p>
-                <p class="article-title">The Growth of Gaming</p>
-                <p></p>
+                <p class="popular-section-rank">03</p>
+                <h2 class="article-title">The Growth of Gaming</h2>
                 <p class="article-description">
                   How the pandemic has sparked fresh opportunities.
                 </p>
